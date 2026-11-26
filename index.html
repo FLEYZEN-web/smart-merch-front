@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMART MERCH — Фізичний мерч × Цифрові можливості</title>
+  <meta name="description" content="Створюємо розумні фізичні речі з NFC та QR-технологіями, які перетворюють звичайний подарунок на новий канал залучення клієнтів.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/modals.css">
+</head>
+<body>
+
+  <div id="pageShell">
+
+    <!-- 1. HEADER -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#hero" class="header__logo">SMART MERCH<span>.</span></a>
+
+        <nav class="header__nav" id="header-nav" aria-label="Основна навігація">
+          <ul class="header__list">
+            <li><a class="header__link" href="#products">Продукти</a></li>
+            <li><a class="header__link" href="#how">Як це працює</a></li>
+            <li><a class="header__link" href="#benefits">Переваги</a></li>
+            <li><a class="header__link" href="#calculator">Калькулятор</a></li>
+            <li><a class="header__link" href="#contacts">Контакти</a></li>
+            <li class="header__item--cta">
+              <a class="btn btn--primary" href="#contacts">Замовити концепт</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="btn btn--primary btn--sm header__cta" href="#contacts">
+          Замовити концепт
+          <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 7h10v10" />
+            <path d="M7 17 17 7" />
+          </svg>
+        </a>
+
+        <button class="header__burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="header-nav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- 2. HERO -->
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <p class="eyebrow">ФІЗИЧНИЙ МЕРЧ × ЦИФРОВІ МОЖЛИВОСТІ</p>
+
+              <h1 class="hero__title">Мерч, який приводить клієнтів, а не лежить у смітнику</h1>
+
+              <p class="hero__text">
+                Створюємо розумні фізичні речі з NFC та QR-технологіями, які перетворюють звичайний подарунок на новий канал залучення клієнтів.
+              </p>
+
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="#contacts">
+                  Замовити концепт
+                  <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                </a>
+                <a class="btn btn--secondary" href="#how">Як це працює</a>
+              </div>
+
+              <ul class="hero__tags" aria-label="Ключові можливості">
+                <li class="chip">NFC + QR</li>
+                <li class="chip">Ваш бренд</li>
+                <li class="chip">Telegram-бот</li>
+              </ul>
+            </div>
+
+            <div class="hero__media">
+              <img class="hero__image" src="images/hero-nfc.jpg" alt="Рука підносить сталевий NFC-брелок SMART MERCH до смартфона" width="1024" height="1024">
+              <div class="hero__hint">
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c6ff36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 8.32a7.43 7.43 0 0 1 0 7.36" />
+                  <path d="M9.46 6.21a11.76 11.76 0 0 1 0 11.58" />
+                  <path d="M12.91 4.1a15.91 15.91 0 0 1 .01 15.8" />
+                  <path d="M16.37 2a20.16 20.16 0 0 1 0 20" />
+                </svg>
+                <div>
+                  <p class="hero__hint-title">Один дотик. Новий контакт.</p>
+                  <p class="hero__hint-sub">Від речі — до вашого бренду</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__principle">
+            <p class="hero__principle-left">КОРИСНА РІЧ. ЖИВИЙ КОНТАКТ. ВАШ БРЕНД.</p>
+            <a class="hero__principle-link" href="#products">Відкрийте можливості мерчу ↓</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. COMPARISON & BENEFITS -->
+      <section class="comparison" id="benefits">
+        <div class="container">
+          <p class="eyebrow">ЧОМУ ЦЕ ПРАЦЮЄ</p>
+          <div class="section-head">
+            <h2 class="section-title">Річ, яку залишають собі, а не викидають.</h2>
+            <p class="section-subtitle">Порівняйте життєвий цикл звичайної друкованої реклами та корисного розумного аксесуара.</p>
+          </div>
+
+          <div class="comparison__grid">
+            <article class="compare-card">
+              <div class="compare-card__media">
+                <img class="compare-card__img" src="images/compare-paper.jpg" alt="Звичайні паперові візитки біля смітника" loading="lazy">
+              </div>
+              <div class="compare-card__body">
+                <span class="compare-card__badge compare-card__badge--muted">× Старий підхід</span>
+                <h3 class="compare-card__title">Звичайні паперові візитки</h3>
+                <p class="compare-card__text">Отримали, переглянули й забули. Контакт із брендом закінчується в день знайомства.</p>
+                <ul class="compare-card__list">
+                  <li><span class="compare-card__icon-bad" aria-hidden="true">×</span> Губляться в кишені або потрапляють у смітник</li>
+                  <li><span class="compare-card__icon-bad" aria-hidden="true">×</span> Неможливо оновити пропозицію чи відстежити переходи</li>
+                  <li><span class="compare-card__icon-bad" aria-hidden="true">×</span> Нульова щоденна користь для клієнта</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="compare-card compare-card--smart">
+              <div class="compare-card__media">
+                <img class="compare-card__img" src="images/compare-smart.jpg" alt="Розумний сталевий NFC-брелок на зв'язці ключів у кав'ярні" loading="lazy">
+              </div>
+              <div class="compare-card__body">
+                <span class="compare-card__badge compare-card__badge--accent">✓ SMART MERCH</span>
+                <h3 class="compare-card__title">Розумний мерч</h3>
+                <p class="compare-card__text">Залишається в щоденному вжитку. Корисний аксесуар повертає клієнта до бренду знову і знову.</p>
+                <ul class="compare-card__list">
+                  <li><span class="compare-card__icon-good" aria-hidden="true">✓</span> Щоденний контакт із вашим логотипом на ключах чи в авто</li>
+                  <li><span class="compare-card__icon-good" aria-hidden="true">✓</span> Миттєвий перехід у Telegram-бот, меню чи онлайн-запис</li>
+                  <li><span class="compare-card__icon-good" aria-hidden="true">✓</span> Сценарій та акцію можна змінювати будь-коли без передруку</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="lifestyle-strip">
+            <div class="lifestyle-card">
+              <img class="lifestyle-card__img" src="images/lifestyle-box.jpg" alt="Подарункове пакування SMART MERCH із металевим NFC-брелоком" loading="lazy">
+              <div class="lifestyle-card__caption">
+                <p class="lifestyle-card__label">Преміальна подача</p>
+                <p class="lifestyle-card__text">Фірмове пакування та лазерне гравіювання під айдентику вашого бренду.</p>
+              </div>
+            </div>
+
+            <div class="lifestyle-card">
+              <img class="lifestyle-card__img" src="images/lifestyle-barber.jpg" alt="Використання сталевого гребінця у барбершопі" loading="lazy">
+              <div class="lifestyle-card__caption">
+                <p class="lifestyle-card__label">Реальне використання</p>
+                <p class="lifestyle-card__text">Речі, якими справді користуються щодня — вдома, в дорозі та на роботі.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. CATALOG -->
+      <section class="catalog" id="products">
+        <div class="container">
+          <p class="eyebrow">КАТАЛОГ МОЖЛИВОСТЕЙ</p>
+          <div class="section-head">
+            <h2 class="section-title">Речі, які працюють на ваш бренд.</h2>
+            <p class="section-subtitle">Перетворюємо звичайні предмети на інструменти залучення клієнтів. Натисніть «Детальніше», щоб переглянути характеристики.</p>
+          </div>
+
+          <div class="catalog__grid">
+            <article class="card">
+              <div class="card__media">
+                <span class="card__badge card__badge--accent">В наявності</span>
+                <img class="card__image" src="images/product-comb.jpg" alt="Металевий гребінець із лазерним QR-кодом" loading="lazy">
+              </div>
+              <div class="card__body">
+                <p class="card__kicker">ДЛЯ БАРБЕРШОПІВ І САЛОНІВ</p>
+                <h3 class="card__title">Металевий гребінець</h3>
+                <p class="card__desc">Компактний аксесуар на щодень. Ваше гравіювання та QR-код ведуть до запису або спеціальної пропозиції.</p>
+                <div class="card__meta">
+                  <span>Сталь 316L • QR</span>
+                  <span class="card__price">850 ₴</span>
+                </div>
+                <div class="card__actions">
+                  <button class="card__more" type="button" data-modal-open="comb">
+                    Детальніше
+                    <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </button>
+                  <a class="btn btn--primary btn--sm" href="#contacts" data-select-product="Металевий гребінець" data-select-niche="barber">Замовити</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__media">
+                <span class="card__badge card__badge--accent">В наявності</span>
+                <img class="card__image" src="images/product-opener.jpg" alt="Сталевий NFC-брелок відкривачка" loading="lazy">
+              </div>
+              <div class="card__body">
+                <p class="card__kicker">ДЛЯ КАФЕ, БАРІВ І МАГАЗИНІВ</p>
+                <h3 class="card__title">Брелок-відкривачка</h3>
+                <p class="card__desc">Корисна річ завжди під рукою. NFC-мітка або QR-код відкривають пропозицію бренду одним рухом.</p>
+                <div class="card__meta">
+                  <span>Шліфована сталь • NFC</span>
+                  <span class="card__price">620 ₴</span>
+                </div>
+                <div class="card__actions">
+                  <button class="card__more" type="button" data-modal-open="opener">
+                    Детальніше
+                    <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </button>
+                  <a class="btn btn--primary btn--sm" href="#contacts" data-select-product="Брелок-відкривачка" data-select-niche="cafe">Замовити</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__media">
+                <span class="card__badge">Обмежена серія</span>
+                <img class="card__image" src="images/product-freshener.jpg" alt="Графітовий автомобільний ароматизатор із QR-кодом" loading="lazy">
+              </div>
+              <div class="card__body">
+                <p class="card__kicker">ДЛЯ АВТОБІЗНЕСУ ТА СЕРВІСІВ</p>
+                <h3 class="card__title">Автомобільний ароматизатор</h3>
+                <p class="card__desc">Ваш бренд у кожній поїздці. Ароматизатор із QR-кодом нагадує про сервіс і спрощує повторний запис.</p>
+                <div class="card__meta">
+                  <span>Графітова повсть • QR</span>
+                  <span class="card__price">390 ₴</span>
+                </div>
+                <div class="card__actions">
+                  <button class="card__more" type="button" data-modal-open="freshener">
+                    Детальніше
+                    <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </button>
+                  <a class="btn btn--primary btn--sm" href="#contacts" data-select-product="Автомобільний ароматизатор" data-select-niche="auto">Замовити</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="catalog__custom">
+            <ul class="catalog__chips">
+              <li class="chip">Ваш логотип</li>
+              <li class="chip">Ваше посилання</li>
+              <li class="chip">Ваш сценарій</li>
+            </ul>
+            <p class="catalog__note">Матеріали, гравіювання та комплектацію узгоджуємо під ваш запит.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. HOW IT WORKS -->
+      <section class="how" id="how">
+        <div class="container">
+          <p class="eyebrow">ПРОСТИЙ МЕХАНІЗМ</p>
+          <div class="section-head">
+            <h2 class="section-title">Від фізичної речі до контакту за три кроки.</h2>
+            <p class="section-subtitle">Жодних складних інтеграцій для клієнта — достатньо піднести смартфон або навести камеру.</p>
+          </div>
+
+          <div class="how__grid">
+            <article class="how-step">
+              <div class="how-step__top">
+                <span class="how-step__num">01</span>
+                <span class="how-step__tag">Старт</span>
+              </div>
+              <h3 class="how-step__title">Ви даруєте.</h3>
+              <p class="how-step__text">Стильний брендований предмет із вбудованим NFC-чіпом або лазерним QR-кодом передається клієнту під час візиту чи покупки.</p>
+            </article>
+
+            <article class="how-step">
+              <div class="how-step__top">
+                <span class="how-step__num">02</span>
+                <span class="how-step__tag">Щоденний контакт</span>
+              </div>
+              <h3 class="how-step__title">Клієнт використовує.</h3>
+              <p class="how-step__text">Корисний аксесуар залишається на ключах, у кишені чи в автомобілі та природно нагадує про ваш бренд щодня.</p>
+            </article>
+
+            <article class="how-step">
+              <div class="how-step__top">
+                <span class="how-step__num">03</span>
+                <span class="how-step__tag">Результат</span>
+              </div>
+              <h3 class="how-step__title">Нові клієнти.</h3>
+              <p class="how-step__text">Один дотик відкриває Telegram-бот із персональним бонусом, онлайн-записом або реферальною пропозицією для друзів.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. INTERACTIVE QUIZ -->
+      <section class="quiz" id="quiz">
+        <div class="container">
+          <div class="quiz__card">
+            <div class="quiz__intro">
+              <p class="eyebrow">ВАШ БІЗНЕС — ВАШ ФОРМАТ</p>
+              <h2 class="quiz__title">Підберемо мерч під ваш бізнес.</h2>
+              <p class="quiz__text">Три короткі запитання допоможуть визначити оптимальний аксесуар і сценарій запуску.</p>
+              <button class="btn btn--primary quiz__start" type="button" data-quiz-start="0">
+                Підібрати мерч
+                <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="quiz__panel">
+              <ol class="quiz__preview" data-quiz-preview>
+                <li>
+                  <button class="quiz__preview-item" type="button" data-quiz-start="0">
+                    <span class="quiz__num">01</span>
+                    <span class="quiz__preview-body">
+                      <span class="quiz__preview-title">Який у вас бізнес?</span>
+                      <span class="quiz__preview-hint">Ніша та ваша аудиторія</span>
+                    </span>
+                    <svg class="icon quiz__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button class="quiz__preview-item" type="button" data-quiz-start="1">
+                    <span class="quiz__num">02</span>
+                    <span class="quiz__preview-body">
+                      <span class="quiz__preview-title">Яка ваша ціль?</span>
+                      <span class="quiz__preview-hint">Нові клієнти, повторні покупки чи впізнаваність</span>
+                    </span>
+                    <svg class="icon quiz__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </button>
+                </li>
+                <li>
+                  <button class="quiz__preview-item" type="button" data-quiz-start="2">
+                    <span class="quiz__num">03</span>
+                    <span class="quiz__preview-body">
+                      <span class="quiz__preview-title">Який бюджет розглядаєте?</span>
+                      <span class="quiz__preview-hint">Знайдемо доречний формат і комплектацію</span>
+                    </span>
+                    <svg class="icon quiz__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
+                    </svg>
+                  </button>
+                </li>
+              </ol>
+
+              <div class="quiz__flow" data-quiz-flow hidden>
+                <div class="quiz__progress" aria-hidden="true">
+                  <div class="quiz__progress-bar" data-quiz-bar></div>
+                </div>
+                <p class="quiz__step" data-quiz-step></p>
+                <h3 class="quiz__question" data-quiz-question tabindex="-1"></h3>
+                <p class="quiz__hint" data-quiz-hint></p>
+                <div class="quiz__options" data-quiz-options></div>
+                <button class="quiz__back" type="button" data-quiz-back>← Назад</button>
+              </div>
+
+              <div class="quiz__result" data-quiz-result hidden>
+                <p class="quiz__result-label">РЕКОМЕНДАЦІЯ</p>
+                <h3 class="quiz__result-title" data-quiz-result-title tabindex="-1"></h3>
+                <p class="quiz__result-text" data-quiz-result-text></p>
+                <div class="quiz__result-actions">
+                  <a class="btn btn--primary" href="#contacts" data-quiz-cta>Замовити концепт</a>
+                  <button class="btn btn--secondary" type="button" data-quiz-restart>Пройти ще раз</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. POTENTIAL CALCULATOR -->
+      <section class="calculator" id="calculator">
+        <div class="container">
+          <p class="eyebrow">КАЛЬКУЛЯТОР ПОТЕНЦІАЛУ</p>
+          <div class="section-head">
+            <h2 class="section-title">Порахуйте потенційний дохід від 100 одиниць мерчу.</h2>
+            <p class="section-subtitle">Налаштуйте ваш середній чек і реалістичну конверсію в повторний або новий візит.</p>
+          </div>
+
+          <div class="calc-grid">
+            <div class="calc-card">
+              <span class="calc-card__kicker">ОСНОВА РОЗРАХУНКУ — 100 БРЕЛОКІВ</span>
+
+              <div class="calc-controls">
+                <div class="calc-field">
+                  <div class="calc-field__head">
+                    <label for="calcCheck" class="calc-field__label">Середній чек</label>
+                    <span id="calcCheckValue" class="calc-field__value">1 000 грн</span>
+                  </div>
+                  <input id="calcCheck" class="calc-range" type="range" min="100" max="5000" step="100" value="1000">
+                  <div class="calc-field__bounds">
+                    <span>100 грн</span>
+                    <span>5 000 грн</span>
+                  </div>
+                </div>
+
+                <div class="calc-field">
+                  <div class="calc-field__head">
+                    <label for="calcConversion" class="calc-field__label">Конверсія у клієнта</label>
+                    <span id="calcConversionValue" class="calc-field__value">5%</span>
+                  </div>
+                  <input id="calcConversion" class="calc-range" type="range" min="1" max="20" step="1" value="5">
+                  <div class="calc-field__bounds">
+                    <span>1%</span>
+                    <span>20%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-result">
+              <div>
+                <span class="calc-card__kicker">ОРІЄНТОВНИЙ РЕЗУЛЬТАТ</span>
+                <p id="calcRevenue" class="calc-result__amount">5 000 грн</p>
+                <p class="calc-result__caption">потенційний додатковий дохід</p>
+              </div>
+
+              <div id="calcFormula" class="calc-result__formula">100 × 5% × 1 000 грн = 5 000 грн</div>
+              <p id="calcClients" class="calc-result__clients">Орієнтовно <strong>5 клієнтів</strong> зі 100 розданих брелоків</p>
+
+              <a class="btn btn--primary btn--full" href="#contacts">
+                Замовити розрахунок тиражу →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. TELEGRAM BOT DEMO & ORDER FORM -->
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <p class="eyebrow">ДЕМО ТА ЗАЯВКА</p>
+          <div class="section-head">
+            <h2 class="section-title">Перевірте сценарій бота та замовте концепт.</h2>
+            <p class="section-subtitle">Натисніть «Поділитися контактом» у демо-чаті, щоб побачити шлях клієнта, або залиште заявку на прорахунок.</p>
+          </div>
+
+          <div class="contacts__grid">
+            <div class="bot-card" aria-label="Інтерактивна демонстрація Telegram-бота">
+              <div class="bot-card__header">
+                <div class="bot-profile">
+                  <div class="bot-avatar" aria-hidden="true">ВБ</div>
+                  <div>
+                    <p class="bot-name">Ваш бренд</p>
+                    <p class="bot-status">бот • онлайн</p>
+                  </div>
+                </div>
+                <span class="bot-tag">Демо-сценарій</span>
+              </div>
+
+              <div id="botChat" class="bot-chat" aria-live="polite"></div>
+
+              <div class="bot-controls">
+                <button id="botShareContactBtn" type="button" class="btn btn--primary btn--full">
+                  Поділитися контактом →
+                </button>
+                <div class="bot-quick-row">
+                  <button type="button" class="bot-chip-btn" data-bot-quick="catalog">📂 Каталог NFC-мерчу</button>
+                  <button type="button" class="bot-chip-btn" data-bot-quick="calc">⚡ Умови тиражу</button>
+                  <button id="botResetBtn" type="button" class="bot-chip-btn">↺ Спробувати ще раз</button>
+                </div>
+                <p class="bot-disclaimer">Демо-сценарій: без переходу у Telegram та без реальної передачі номера.</p>
+              </div>
+            </div>
+
+            <div class="form-card">
+              <div class="form-card__head">
+                <div>
+                  <h3 class="form-card__title">Замовити концепт</h3>
+                  <p class="form-card__sub">Розкажіть про бізнес — покажемо ідеї та макети.</p>
+                </div>
+                <span class="form-card__demo-badge">Демо</span>
+              </div>
+
+              <div id="orderContextPill" class="form-context-pill" hidden>
+                <span id="orderContextText"></span>
+                <button id="orderContextClear" type="button" class="form-context-pill__clear" aria-label="Очистити обраний товар">×</button>
+              </div>
+
+              <div id="orderSuccess" class="form-success" role="status" aria-live="polite" hidden>
+                <div class="form-success__icon" aria-hidden="true">✓</div>
+                <h4 class="form-success__title">Заявку прийнято</h4>
+                <p class="form-success__text">
+                  Дякуємо! Дані пройшли перевірку. У робочому режимі менеджер SMART MERCH зв'яжеться з вами протягом 15 хвилин.
+                </p>
+                <button id="orderResetBtn" type="button" class="btn btn--secondary btn--sm">
+                  Надіслати ще одну заявку
+                </button>
+              </div>
+
+              <form id="orderForm" novalidate>
+                <div class="form-field">
+                  <label for="orderName" class="form-label">Ім'я <span>*</span></label>
+                  <input
+                    id="orderName"
+                    name="name"
+                    type="text"
+                    class="form-input"
+                    placeholder="Як до вас звертатися?"
+                    autocomplete="name"
+                    aria-required="true"
+                    aria-invalid="false"
+                  >
+                  <span class="form-error" role="alert"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="orderNiche" class="form-label">Ніша бізнесу <span>*</span></label>
+                  <select id="orderNiche" name="niche" class="form-select" aria-required="true" aria-invalid="false">
+                    <option value="">Оберіть нішу бізнесу</option>
+                    <option value="barber">Барбершоп / салон</option>
+                    <option value="cafe">Кафе / бар / магазин</option>
+                    <option value="auto">Автобізнес / сервіс</option>
+                    <option value="other">Інше</option>
+                  </select>
+                  <span class="form-error" role="alert"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="orderContact" class="form-label">Телефон або Telegram <span>*</span></label>
+                  <input
+                    id="orderContact"
+                    name="contact"
+                    type="text"
+                    class="form-input"
+                    placeholder="+380 (__) ___-__-__ або @username"
+                    autocomplete="tel"
+                    aria-required="true"
+                    aria-invalid="false"
+                  >
+                  <span class="form-hint">Наприклад: +380 (67) 123-45-67 або @your_brand</span>
+                  <span class="form-error" role="alert"></span>
+                </div>
+
+                <label class="form-checkbox">
+                  <input type="checkbox" name="engraving" checked>
+                  <span>Додати персональне гравіювання та налаштування Telegram-бота</span>
+                </label>
+
+                <button id="orderSubmitBtn" type="submit" class="btn btn--primary btn--full">
+                  Надіслати →
+                </button>
+
+                <p class="form-footnote">Демонстраційна форма: дані не надсилаються на зовнішній сервер.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 9. FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a class="footer__logo" href="#hero">SMART MERCH<span>.</span></a>
+            <p class="footer__desc">Корисні фізичні речі. Цифрові можливості вашого бренду.</p>
+          </div>
+
+          <nav class="footer__group" aria-label="Навігація у футері">
+            <p class="footer__label">Навігація</p>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="#products">Продукти</a></li>
+              <li><a class="footer__link" href="#how">Як це працює</a></li>
+              <li><a class="footer__link" href="#benefits">Переваги</a></li>
+              <li><a class="footer__link" href="#calculator">Калькулятор</a></li>
+              <li><a class="footer__link" href="#contacts">Контакти</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer__group">
+            <p class="footer__label">Продукти</p>
+            <ul class="footer__list">
+              <li><button class="footer__link" type="button" style="background:none;border:0;padding:0;cursor:pointer;" data-modal-open="comb">Металевий гребінець</button></li>
+              <li><button class="footer__link" type="button" style="background:none;border:0;padding:0;cursor:pointer;" data-modal-open="opener">Брелок-відкривачка</button></li>
+              <li><button class="footer__link" type="button" style="background:none;border:0;padding:0;cursor:pointer;" data-modal-open="freshener">Автомобільний ароматизатор</button></li>
+            </ul>
+          </div>
+
+          <div class="footer__group">
+            <p class="footer__label">Будьмо на зв’язку</p>
+            <a class="footer__telegram" href="#contacts">Telegram ↗</a>
+            <p class="footer__handle">@SmartMerchOfficialBot</p>
+          </div>
+        </div>
+
+        <div class="footer__legal">
+          <p>© 2026 SMART MERCH. Усі права захищені.</p>
+          <a class="footer__link" href="#contacts">Політика конфіденційності</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Telegram Button -->
+    <a class="floating-tg" href="#contacts" aria-label="Зв’язатися в Telegram">
+      <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c6ff36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+        <path d="m21.854 2.147-10.94 10.939" />
+      </svg>
+      <span class="floating-tg__label">Зв’язатися в Telegram</span>
+    </a>
+
+  </div>
+
+  <!-- PRODUCT DETAIL MODAL -->
+  <div id="productModal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+    <div id="modalWindow" class="modal-window">
+      <div class="modal-drag-handle" aria-hidden="true"></div>
+
+      <button type="button" id="modalCloseBtn" class="modal-close-btn" aria-label="Закрити модальне вікно">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+
+      <div class="modal-media">
+        <span id="modalMediaBadge" class="modal-media__badge">В наявності</span>
+        <img id="modalImg" class="modal-media__img" src="images/product-comb.jpg" alt="">
+      </div>
+
+      <div class="modal-details">
+        <div>
+          <p id="modalRubric" class="modal-details__rubric"></p>
+          <h2 id="modalTitle" class="modal-details__title"></h2>
+        </div>
+
+        <div class="modal-pricing-bar">
+          <div>
+            <span class="modal-pricing-label">Орієнтовна ціна</span>
+            <span id="modalPrice" class="modal-price-value"></span>
+          </div>
+          <div style="text-align: right;">
+            <span class="modal-pricing-label">Статус</span>
+            <span id="modalStock" class="modal-stock-status"></span>
+          </div>
+        </div>
+
+        <p id="modalDescription" class="modal-description"></p>
+
+        <div>
+          <span class="modal-specs__title">Характеристики та матеріали</span>
+          <div id="modalTags" class="modal-specs__tags"></div>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" id="modalOrderBtn" class="btn btn--primary">Замовити концепт →</button>
+          <button type="button" id="modalActionCloseBtn" class="btn btn--secondary">Закрити</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/modals.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/bot-demo.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
